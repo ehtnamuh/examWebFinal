@@ -6,12 +6,17 @@
   var articleSchema = new Schema({
     title: {
       type: String,
+      required: "Title required"
     },
     priorty: {
-      type: Number
+      type: Number,
+      required: "Priority required",
+      min: 0,
+      max: 10
     },
     notes: {
       type: String,
+      required: "Notes required"
     }
 
   });
