@@ -24,8 +24,20 @@
         <!-- Put div of tasks here after fetching from database -->
     </div>
     
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script>
         // load from data base here
+        // var Task = require('./models/Task.js');
+        // Have to pass in DB model some other way
+        
+        Task.find(function (err, docs) {
+            for (var i = 0; i < docs.length; i++){
+                var tas= document.createElement('div');
+                tas.innerHTML = "<h3>" + docs[i].title + " | " + docs[i].priority + "</h3>";
+                $('#tasklist').appendChild(tas);
+            }
+        });
+        
     </script>
 </body>
 </html>

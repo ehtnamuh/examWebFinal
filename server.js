@@ -39,6 +39,14 @@ app.get('/task/list', function(request, response) {
     response.render('list.ejs');
 });
 
+// scaffolding not working yet
+app.get('/task/:articleID', function(request, response) {
+    response.render(__dirname + '/views/task.ejs', {
+     // HAVE TO QUERY HERE WITH object _id
+     //task: task[request.params.articleID]
+     // Task.findById()
+    });
+  });
 
 server.listen(process.env.PORT, process.env.IP, function() {
     console.log('Server running');
