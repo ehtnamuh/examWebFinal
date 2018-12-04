@@ -1,0 +1,25 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "task pusher",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehtnamuh/examWebFinal.git"
+  },
+  "author": "Samin Bin Karim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ehtnamuh/examWebFinal/issues"
+  },
+  "homepage": "https://github.com/ehtnamuh/examWebFinal#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.3.14"
+  }
+}
