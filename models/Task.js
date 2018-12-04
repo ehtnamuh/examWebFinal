@@ -8,11 +8,11 @@
       type: String,
       required: "Title required"
     },
-    priorty: {
+    priority: {
       type: Number,
       required: "Priority required",
       min: 0,
-      max: 10
+      max:10
     },
     notes: {
       type: String,
